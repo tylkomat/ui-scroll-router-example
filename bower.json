@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.6.0",
+    "angular-ui-router": "https://github.com/angular-ui/angular-ui-router-bower.git#1.0.5",
+    "angular-ui-scroll": "1.7.0-rc.1"
+  },
+  "private": true,
+  "resolutions": {
+    "angular": "~1.6"
+  }
+}
