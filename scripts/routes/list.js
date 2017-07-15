@@ -6,6 +6,7 @@ angular.module('app').config([
 			url: '/list',
 			templateUrl: 'views/list.html',
 			controller: 'ListController',
+      controllerAs: 'List'
 		});
 	}
 ]);

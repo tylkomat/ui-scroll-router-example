@@ -3,8 +3,9 @@ angular.module('app.controllers').controller('ListController', [
 	'$scope', '$state', 'ListDatasource',
 	function($scope, $state, ListDatasource) {
 
-		$scope.listDatasource = ListDatasource;
-		$scope.adapter = {};
+		var self = this;
+		self.listDatasource = ListDatasource;
+		self.adapter = {};
 
 		$scope.getSetStartIndexCallback = function(item) {
 
@@ -12,7 +13,7 @@ angular.module('app.controllers').controller('ListController', [
 
 			return function() {
 
-				$scope.$watch('adapter', function(scopeAdapter) {
+				$scope.$watch('List.adapter', function(scopeAdapter) {
 
 					if(angular.isFunction(scopeAdapter.reload)) {
 
