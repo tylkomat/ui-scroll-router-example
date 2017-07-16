@@ -1,9 +1,9 @@
 <header>
-	<h2>Some header content</h2>
+  <h2>Some header content</h2>
 </header>
 
 <div ui-view="list" autoscroll>
-	<div ui-scroll="item in listDatasource" adapter="adapter">
-		<a ui-sref=".single({index: item})" ng-bind="item" persist-scroll-position="getSetStartIndexCallback(item)"></a>
-	</div>
+  <div ui-scroll="item in List.listDatasource" adapter="List.adapter">
+    <a ui-sref=".single({index: item})" ng-bind="item" persist-scroll-position="getSetStartIndexCallback(item)"></a>
+  </div>
 </div>
